@@ -9,8 +9,12 @@ cursor = conn.cursor()
 user=[
     ["Галя", "Galya@gmail.com"],
     ["Толя", "Tolya@gmail.com"],
-    ["Николай", "Nokolai@gmail.com"],
-    ["Нина", "Nina@gmail.com"]
+    ["Николай", "Nokolay@gmail.com"],
+    ["Генадий", "Genadiy@gmail.com"]
+    ["Петр", "Petr@gmail.com"]
+    ["Олег", "Oleg@gmail.com"]
+    ["Валера", "Valera@gmail.com"]
+
 ]
 for i in range(len(user)):
     cursor.execute(
@@ -22,8 +26,11 @@ for i in range(len(user)):
 usersCategories=[
     [1,1], [1,4], [1,5], [1,8],
     [2,2], [2,3], [2,7],
-    [3,1], [3,2], [3,4], [3,6], [1,9],
-    [4,4], [4,6], [4,8], [4,9]
+    [3,1], [3,8],
+    [4,4], [4,6], [4,8], [4,9],
+    [5,2], [4,5],
+    [6,4], [4,6], [4,7],
+    [7,1], [4,2], [4,3], [4,4]
 ]
 
 for i in range(len(usersCategories)):
