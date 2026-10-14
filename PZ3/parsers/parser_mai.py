@@ -146,6 +146,7 @@ def parse():
                 "INSERT OR IGNORE INTO news (title, published_date, link, category_id, university_id) VALUES (?, ?, ?, ?, ?)",
                 (new[0], new[1], new[2], new[3], mai_id)
             )
+            print("Новость добавлена", new[0])
         conn.commit()
 
     else:
@@ -196,6 +197,7 @@ def parse():
                     "INSERT OR IGNORE INTO news (title, published_date, link, category_id, university_id) VALUES (?, ?, ?, ?, ?)",
                     (new[0], new[1], new[2], new[3], mai_id)
                 )
+                print("Новость добавлена", new[0])
             conn.commit()
         else:
             print(f"[MAI] За {MAX_PAGES_LOOKBACK} страниц совпадений не найдено, пропускаем")
