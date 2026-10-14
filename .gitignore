@@ -1,3 +1,10 @@
 test.py
 PZ3/zaprosnik.py
 PZ3/test.py
+PZ3/parsers/__pycache__/
+*.py[cod]
+venv/
+.venv/
+.env
+*.egg-info/
+.pytest_cache/
